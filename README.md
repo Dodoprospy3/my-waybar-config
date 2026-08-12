@@ -16,7 +16,7 @@ By Dodoprospy3
 
 ## How to set up
 
-first, run this command to go to the waybar Directory
+First, run this command to go to the waybar Directory
 ```bash
 cd ~/.config/waybar/
 ```
@@ -26,30 +26,30 @@ if it doesn't exist create it yourself
 mkdir ~/.config/waybar/
 ```
 
-then go into it again
+Then go into it again
 ```bash
 cd ~/.config/waybar
 ```
 
-then run this command to clone the repo to your directory
+Then run this command to clone the repo to your directory
 
 ```bash
 git clone https://github.com/Dodoprospy3/my-waybar-config.git .
 ```
-now if you run ```waybar``` in your terminal it will show up, 
-then close your terminal or press ```Ctrl+c```, don't worry I kow that your beatiful waybar that you just stole from me is gone, 
-then go into your hyprland.lua Directory
+now if you run ```waybar``` in your terminal, it will show up. 
+then close your terminal or press ```Ctrl+c```, don't worry I know that your beatiful waybar that you just stole from me is gone, 
+then go into your `hypr` Directory
 
 ```bash
 cd ~/.config/hypr/
 ```
 
 then run ```ls```
-you should see hyprland.lua
+you should see `hyprland.lua`
 
 Use your preferred text editor to edit `hyprland.lua`
 
-> WARNING: If your preferred text editor is Emacs, reconsider your life choices.
+> WARNING: If your preferred text editor is Ema*s, reconsider your life choices.
 > 
 > Vim/Neovim users are welcome. Emacs users will be judged.
 
