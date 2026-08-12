@@ -36,5 +36,17 @@ then run this command to clone the repo to your directory
 ```bash
 git clone https://github.com/Dodoprospy3/my-waybar-config.git
 ```
+now if you run ```waybar``` in your terminal it will show up
+first close your terminal, Don't worry I kow that your beatiful waybar that you just stole from me is gone
+then go into your hyprland.lua Directory
+
+```bash
+cd ~/.config/hypr/
+```
+
+then run ```ls```
+you should see hyprland.lua
+
+use your desired text editor (shame on you if you use emacs) and run ```<YOUR-TEXT-EDITOR> hyprland.lua``` 
 
 
