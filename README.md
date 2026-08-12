@@ -6,6 +6,11 @@
 
 ---
 
+## Requirments
+hyprland 0.56.X
+git version 2.55.0 or higher
+Waybar v0.15.0 or higher
+
 ## How to set up
 
 first, run this command to go to the waybar Directory
