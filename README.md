@@ -2,6 +2,11 @@
 By Dodoprospy3
 
 ---
+![Waybar Preview](assets/1.png)
+![Waybar Preview](assets/2.png)
+![Waybar Preview](assets/3.png)
+
+---
 
 > **Warning:** This configuration requires Hyprland 0.56.X and may not work correctly on other versions. The author is not responsible for any problems caused by using this configuration.
 
