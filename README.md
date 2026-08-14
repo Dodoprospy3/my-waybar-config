@@ -13,9 +13,77 @@ By Dodoprospy3
 ---
 
 ## Requirements
-- hyprland 0.56.X
-- git version 2.55.0 or higher
-- Waybar v0.15.0 or higher
+
+Before installing this Waybar configuration, make sure you have the following installed.
+
+### Required Software
+
+* **Hyprland 0.56.X**
+  This configuration was made for Hyprland 0.56.X and may not work correctly with other versions.
+
+* **Waybar v0.15.0 or newer**
+  Waybar is the program that displays the bar.
+
+* **Git**
+  Git is used to download this configration from GitHub.
+
+* **Blueman 2.4.6-2 or newer**
+  Blueman provides the Bluetooth manager used by the Bluetooth module.
+
+* **Pavucontrol**
+  used to open the aadio settings when clicking the volume module.
+
+* **Playerctl**
+  Used by the media controls.
+
+* **Kitty**
+  uSed to open a terminal when clicking the CPU and memory modules.
+
+* **btop**
+  Opens when clicking the CPU module.
+
+* **htop**
+  Opens when clicking the memory module.
+
+<!-- * **Chromium** ##will be edited to and add other browser compatibility##
+  Opens Google Calendar when clicking the clock.
+-->
+* **NetworkManager**
+  Used to manage Wi-Fi and Ethernet connections.
+
+* **nmrs**
+  Used to open the Wi-Fi/network selection menu when clicking the network module.
+
+* **A Nerd Font**
+  This configuration uses Nerd Font icons. **JetBrainsMono Nerd Font** is recommended. if you don't want to use it, you will need to edit the config
+
+### Installing on Arch Linux (or any arch based distro)
+
+If you are using Arch Linux or an Arch-based distribution, install the main packages with:
+
+```bash
+sudo pacman -S waybar git blueman pavucontrol playerctl kitty btop htop networkmanager
+```
+
+Then install the recommended Nerd Font:
+
+```bash
+sudo pacman -S ttf-jetbrains-mono-nerd
+```
+to install `nmrs`, run this command:
+
+```bash
+git clone https://aur.archlinux.org/nmrs.git
+cd nmrs
+makepkg -si
+```
+
+### That's It
+
+You do **not** need to install any additional media scripts or dependencies. The old custom media scripts are no longer part of this configuration.
+
+If you already have some of these programs installed, you do not need to install them again.
+
 
 ---
 
