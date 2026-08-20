@@ -12,6 +12,10 @@ By Dodoprospy3
 
 ---
 
+> for the record, I don't use this config anymore because I switched to ***Omarchy***, but I will still maintain it so anyone can use it and also I still can recieve sand respond to issues and pull requests
+
+---
+
 ## Requirements
 
 Before installing this Waybar configuration, make sure you have the following installed.
