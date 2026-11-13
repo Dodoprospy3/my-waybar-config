@@ -1,13 +1,12 @@
 {
     "layer": "top",
-    "position": "bottom",
-    "margin-top": 0,
-    "margin-left": 0,
-    "margin-right": 0,
-    "height":  0,
+    "position": "top",
+    "margin-top": 6,
+    "margin-left": 10,
+    "margin-right": 10,
+    "height": 6,
     "modules-left": [
-        "hyprland/workspaces",
-        "group/media"
+        "hyprland/workspaces"
     ],
     "modules-center": [
         "clock"
@@ -18,15 +17,18 @@
         "battery",
         "bluetooth",
         "network",
+        "tray",
         "cpu",
-        "memory",
-        "tray"
+        "memory"
     ],
     "hyprland/window": {
         "max-length": 10
     },
+    "tray": {
+        "spacing": 2
+    },
     "battery": {
-        "interval": 60,
+        "interval": 5,
         "format": "{capacity}% {icon}",
         "format-icons": {
             "default": [
@@ -55,11 +57,11 @@
                 "󰂋",
                 "󰂅"
             ]
-        },
+        }
     },
     "bluetooth": {
         "format": "",
-        "format-disabled": "", // an empty format will hide the module
+        "format-disabled": "",
         "format-connected": " {num_connections}",
         "tooltip-format": "{controller_alias}\t{controller_address}",
         "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
@@ -67,28 +69,28 @@
         "on-click": "blueman-manager"
     },
     "cpu": {
-        "interval": 10,
+        "interval": 1,
         "format": " {}%",
         "max-length": 10,
         "on-click": "exec kitty --title=btop -e btop"
     },
     "memory": {
-        "interval": 30,
-        "format": " {percentage}%",
-        "tooltip-format": "{used:0.1f}G/{total:0.1f}G used",
-        "on-click": "exec kitty --title=htop -e htop",
+        "interval": 1,
+        "format": " {used:0.1f}/{total:0.1f}GB",
+        "tooltip-format": "RAM usage: {percentage}%",
+        "on-click": "exec kitty --title=htop -e htop"
     },
     "network": {
         "format": "",
         "format-wifi": "",
         "format-ethernet": "",
-        "format-disconnected": "󰤭", //An empty format will hide the module.
+        "format-disconnected": "󰤭",
         "tooltip-format": "{ifname} via {gwaddr} 󰊗",
         "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
         "tooltip-format-ethernet": "{ifname} ",
         "tooltip-format-disconnected": "󰖪",
         "max-length": 50,
-        "on-click": "exec nmrs",
+        "on-click": "exec nmrs"
     },
     "clock": {
         "format": "󰥔 {:%a, %d. %b %I:%M %p}",
@@ -97,8 +99,7 @@
             "format": {
                 "today": "<span color='#75f1fa'><b>{}</b></span>"
             }
-        },
-        "on-click": "exec chromium --app=https://calendar.google.com"
+        }
     },
     "pulseaudio": {
         "format": "{volume}% {icon}",
@@ -113,7 +114,7 @@
         "ignored-sinks": [
             "Easy Effects Sink"
         ],
-        "on-click": "pavucontrol",
+        "on-click": "pavucontrol"
     },
     "pulseaudio/slider": {
         "min": 0,
@@ -135,22 +136,29 @@
             "custom/media-time"
         ]
     },
+    "hyprland/workspaces": {
+        "format": "{name}: {icon}",
+        "format-icons": {
+            "active": "",
+            "default": ""
+        }
+    },
     "custom/media-now-playing": {
         "exec": "~/.config/waybar/custom_modules/media/media-now-playing.sh",
         "escape": true,
         "tooltip": false,
         "on-click": "playerctl play-pause",
         "on-click-middle": "playerctl previous",
-        "on-click-right": "playerctl next",
+        "on-click-right": "playerctl next"
     },
     "custom/media-animation": {
         "exec": "~/.config/waybar/custom_modules/media/media-animation.sh",
-        "tooltip": false,
+        "tooltip": false
     },
     "custom/media-time": {
         "exec": "~/.config/waybar/custom_modules/media/media-time.sh",
         "escape": true,
         "interval": 1,
-        "tooltip": false,
+        "tooltip": false
     }
 }
